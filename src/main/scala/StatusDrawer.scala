@@ -2,6 +2,7 @@ package org.bigsleep.spacemission
 
 import android.graphics.Paint
 import javax.microedition.khronos.opengles.GL10
+import android.util.TypedValue
 
 class PlayStatusDrawer(model : GameModel) extends org.bigsleep.android.view.Drawer
 {

@@ -48,7 +48,7 @@ class Player extends Character
     
     //override def damage(d : Int) : Unit = {}
     
-    override def maxHP = 40
+    override def maxHP = 20
     
     private var score = 0
     

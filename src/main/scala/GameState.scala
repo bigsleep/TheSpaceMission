@@ -9,6 +9,7 @@ import android.widget.FrameLayout
 import android.content.Context
 import android.view.MotionEvent
 import android.view.ViewGroup.LayoutParams
+import android.util.TypedValue
 
 class GameStateMachine(ctx : Context)
 {
@@ -267,7 +268,7 @@ class Pause(ctx : Context) extends GameState
     
     val scale = GameMain.getWindowHeight.toFloat / GameMain.getHeight.toFloat
     val buttonWidth = (GameMain.getWindowWidth.toDouble * 0.8).toInt
-    val textSize = 40f * scale
+    val textSize = 30f * scale
     val buttonHeight = (textSize * 1.2).toInt
     val sidePadding = (GameMain.getWindowWidth.toDouble * 0.2).toInt
     val padding = sidePadding / 2
@@ -339,13 +340,13 @@ class GameOvered(context : Context) extends GameState
         widgets.setGravity(android.view.Gravity.CENTER_HORIZONTAL | android.view.Gravity.CENTER_VERTICAL)
         widgets.setOrientation(android.widget.LinearLayout.VERTICAL)
         
-        val textSize = GameMain.getWindowHeight.toFloat / 10f
+        val textSize = GameMain.getWindowHeight.toFloat / 20f
         val sidePadding = (GameMain.getWindowWidth.toDouble * 0.2).toInt
         val padding = sidePadding / 2
         
         val tv = new TextView(ctx)
         tv.setText("GAME OVER")
-        tv.setTextSize(textSize)
+        tv.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize)
         tv.setTextColor(0xFFFFFFFF)
         tv.setPadding(sidePadding, padding, sidePadding, padding)
         tv.setGravity(android.view.Gravity.CENTER_HORIZONTAL | android.view.Gravity.CENTER_VERTICAL)
@@ -400,13 +401,13 @@ class GameCleared(context : Context) extends GameState
         widgets.setGravity(android.view.Gravity.CENTER_HORIZONTAL | android.view.Gravity.CENTER_VERTICAL)
         widgets.setOrientation(android.widget.LinearLayout.VERTICAL)
         
-        val textSize = GameMain.getWindowHeight.toFloat / 10f
+        val textSize = GameMain.getWindowHeight.toFloat / 20f
         val sidePadding = (GameMain.getWindowWidth.toDouble * 0.2).toInt
         val padding = sidePadding / 2
         
         val tv = new TextView(ctx)
         tv.setText("GAME CLEAR")
-        tv.setTextSize(textSize)
+        tv.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize)
         tv.setTextColor(0xFFFFFFFF)
         tv.setPadding(sidePadding, padding, sidePadding, padding)
         tv.setGravity(android.view.Gravity.CENTER_HORIZONTAL | android.view.Gravity.CENTER_VERTICAL)

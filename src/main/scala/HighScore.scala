@@ -7,6 +7,7 @@ import android.widget.LinearLayout
 import android.widget.LinearLayout.LayoutParams
 import android.view.ViewGroup
 import android.view.Gravity
+import android.util.TypedValue
 //import android.text.format.Time
 
 class Time(
@@ -76,13 +77,13 @@ class Highscore(ctx : Context) extends GameState
         layout.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL)
         layout.setOrientation(LinearLayout.VERTICAL)
         
-        val textSize = GameMain.getWindowHeight.toFloat / 45f
+        val textSize = GameMain.getWindowHeight.toFloat / 36f
         
         val width = GameMain.getWindowWidth
         val height = GameMain.getWindowHeight / (size + 1)
         val t1 = new TextView(context)
         t1.setText("HIGHSCORE")
-        t1.setTextSize(textSize)
+        t1.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize)
         t1.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL)
         val tLP = new LayoutParams(width, height)
         tLP.weight = 1
@@ -100,7 +101,7 @@ class Highscore(ctx : Context) extends GameState
             
             val rankView = new TextView(context)
             rankView.setText(rank.toString)
-            rankView.setTextSize(textSize)
+            rankView.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize)
             rankView.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL)
             val rankLP = new LayoutParams(width / 6, height)
             rankLP.weight = 1
@@ -114,7 +115,7 @@ class Highscore(ctx : Context) extends GameState
             
             val dateView = new TextView(context)
             dateView.setText(date)
-            dateView.setTextSize(textSize)
+            dateView.setTextSize(TypedValue.COMPLEX_UNIT_PX, textSize)
             dateView.setGravity(Gravity.RIGHT | Gravity.CENTER_VERTICAL)
             val dateLP = new LayoutParams(width * 3 / 6, height)
             dateLP.weight = 3

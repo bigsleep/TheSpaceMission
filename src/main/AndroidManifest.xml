@@ -2,10 +2,9 @@
     package="org.bigsleep.spacemission">
 
     <application
-        android:icon="@drawable/android:star_big_on"
+        android:icon="@drawable/rocket"
         android:label="@string/app_name"
-        android:debuggable="true"
-        android:vmSafeMode="true">
+        android:debuggable="false">
 
         <activity
             android:label="@string/app_name"
@@ -18,5 +17,5 @@
         </activity>
     </application>
 
-    <uses-sdk android:minSdkVersion="10"/>
+    <uses-sdk android:minSdkVersion="7"/>
 </manifest>
