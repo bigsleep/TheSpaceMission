@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TheSpaceMission</string>
+    <string-array name="drawables">
+        <item>back1</item>
+        <item>back2</item>
+        <item>back3</item>
+        <item>back4</item>
+        <item>rocket</item>
+        <item>e01b</item>
+        <item>e01g</item>
+        <item>e01r</item>
+        <item>e02</item>
+        <item>e03</item>
+        <item>e04ufo</item>
+        <item>plus</item>
+        <item>meteor</item>
+        <item>c</item>
+        <item>plus</item>
+        <item>shotyellow</item>
+        <item>shotred</item>
+        <item>shotgreen</item>
+        <item>shotblue</item>
+        <item>boss01</item>
+        <item>b01</item>
+        <item>b02</item>
+        <item>b03</item>
+        <item>b04</item>
+        <item>b05</item>
+        <item>b06</item>
+        <item>b07</item>
+        <item>b08</item>
+        <item>b09</item>
+        <item>b10</item>
+        <item>b11</item>
+        <item>b12</item>
+        <item>b13</item>
+        <item>b14</item>
+        <item>b15</item>
+        <item>b16</item>
+    </string-array>
+</resources>

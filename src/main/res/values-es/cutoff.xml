@@ -1,0 +1,29 @@
+<resources>
+    <string-array name="cutoffanimations">
+        <item>blowup</item>
+    </string-array>
+    <string-array name="background">
+        <item>back1</item>
+        <item>back2</item>
+        <item>back3</item>
+        <item>back4</item>
+    </string-array>
+    <string-array name="blowup">
+        <item>b01</item>
+        <item>b02</item>
+        <item>b03</item>
+        <item>b04</item>
+        <item>b05</item>
+        <item>b06</item>
+        <item>b07</item>
+        <item>b08</item>
+        <item>b09</item>
+        <item>b10</item>
+        <item>b11</item>
+        <item>b12</item>
+        <item>b13</item>
+        <item>b14</item>
+        <item>b15</item>
+        <item>b16</item>
+    </string-array>
+</resources>
